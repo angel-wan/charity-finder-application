@@ -1,27 +1,76 @@
-# React + TypeScript + Vite
+# Charity Finder Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Charity Finder is a web application that allows users to search for charities, view detailed information about each charity, and save their favorite charities. This application is built with React, Typescript, and Tailwind CSS, and it utilizes the Every.org API for data fetching.
 
-Currently, two official plugins are available:
+![Charity Finder Screenshot](screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Home Page**: The home page provides a search component at the top and displays search results or default charities.
+- **Search Result Page**: Search results are displayed with charity details.
+- **Charity Detail Page**: Detailed information about a selected charity is shown on this page.
+- **Favorites Page**: Users can view their favorite charities.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Tech Stack
+
+- React
+- Typescript (.tsx/.ts)
+- Tailwind CSS
+- Every.org API
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+   ````bash
+   git clone https://github.com/angel-wan/charity-finder-application.git
+   ```
+
+   ````
+
+2. Change your working directory to the project folder:
+
+   ```bash
+   cd charity-finder
+   ```
+
+3. Install the project dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+1. Create a .env file in the project root and add your Every.org API key:
+
+```env
+REACT_APP_API_KEY=your-api-key
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Start the development server:
+
+```bash
+npm start
+```
+
+3. Open your web browser and access the application at http://localhost:5173.
+
+## Project Structure
+
+The project is organized into different components and pages. Here's an overview:
+
+src/components: Contains individual UI components like Search, CharityList, CharityDetail, and FavoriteCharities.
+src/pages: Includes the main application pages like Home, SearchResult, CharityDetail, Favorites.
+src/api: Manages API endpoints for fetching charity data.
+src/redux: Contains Redux store configuration and slices for managing app state.
+src/utils: Provides utility functions and constants.
+src/assets: Stores assets like causes.
