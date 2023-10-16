@@ -2,7 +2,7 @@
 
 Charity Finder is a web application that allows users to search for charities, view detailed information about each charity, and save their favorite charities. This application is built with React, Typescript, and Tailwind CSS, and it utilizes the Every.org API for data fetching.
 
-![Charity Finder Screenshot](screenshot.png)
+![Charity Finder Screenshot](https://github.com/angel-wan/charity-finder-application/assets/49020215/188447a8-7c69-4d43-87d0-b8a40ef33760)
 
 ## Table of Contents
 
