@@ -31,10 +31,11 @@
     "baseUrl": ".",
     "paths": {
       "*": ["types/*"]
-    }
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }],
-  "resolveJsonModule": true,
-  "esModuleInterop": true
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
